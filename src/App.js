@@ -5,6 +5,7 @@ import { loginRequest } from "./authConfig";
 import Button from "react-bootstrap/Button";
 import { ProfileData } from "./components/ProfileData";
 import { callMsGraph } from "./graph";
+import './App.css';
 
 function ProfileContent() {
   const { instance, accounts } = useMsal();

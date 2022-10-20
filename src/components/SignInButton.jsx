@@ -18,6 +18,30 @@ export const SignInButton = () => {
         }
     }
     return (
-        <Button variant="secondary" className="ml-auto" onClick={() => handleLogin("redirect")}>Prijava</Button>
+        <>
+        <style type="text/css">
+        {`
+    .btn-flat {
+      background-color: #00cc00;
+      color: white;
+    }
+
+    .btn-flat:hover {
+        background-color: green;
+        color: white;
+      }
+
+      .btn-xxl {
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+      }
+
+    .btn-space {
+        margin-left: 20px;
+    }
+    `}
+      </style>
+        <Button variant="flat" size="xxl" className="ml-auto btn-space" onClick={() => handleLogin("redirect")}><b>Prijava!</b></Button>
+        </>
     );
 }

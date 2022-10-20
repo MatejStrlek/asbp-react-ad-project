@@ -17,6 +17,31 @@ export const SignOutButton = () => {
     }
 
     return (
-        <Button variant="secondary" className="ml-auto" onClick={() => handleLogout("redirect")}>Sign out using Redirect</Button>
+        <>
+        <style type="text/css">
+        {`
+    .btn-flat {
+      background-color: red;
+      color: white;
+    }
+
+    .btn-flat:hover {
+        background-color: #C70039;
+        color: white;
+      }
+
+    .btn-xxl {
+      padding: 1rem 1rem;
+      font-size: 1.2rem;
+    }
+
+    .btn-space {
+        margin-left: 20px;
+    }
+    `}
+      </style>
+      <Button variant="flat" className="ml-auto btn-space" size="xxl" onClick={() => handleLogout("redirect")}><b>Odjava!</b></Button>
+        </>
     );
 }
+

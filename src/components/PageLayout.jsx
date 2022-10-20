@@ -12,10 +12,10 @@ export const PageLayout = (props) => {
 
     return (
         <>
-            <Navbar bg="primary" variant="dark">
+            <Navbar bg="secondary" variant="dark">
                 { isAuthenticated ? <SignOutButton /> : <SignInButton /> }
             </Navbar>
-            <h5><center>Welcome to the Microsoft Authentication Library For React Tutorial</center></h5>
+            <h2><center>ASBP Project - Active Directory Authentication in React.js</center></h2>
             <br />
             <br />
             {props.children}
