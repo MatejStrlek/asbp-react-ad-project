@@ -40,7 +40,7 @@ export const SignOutButton = () => {
     }
     `}
       </style>
-      <Button variant="flat" className="ml-auto btn-space" size="xxl" onClick={() => handleLogout("redirect")}><b>Odjava!</b></Button>
+      <Button variant="flat" className="ml-auto btn-space" size="xxl" onClick={() => handleLogout("redirect")}><b>Sign out!</b></Button>
         </>
     );
 }

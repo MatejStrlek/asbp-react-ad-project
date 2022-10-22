@@ -8,25 +8,26 @@ import Button from "react-bootstrap/Button";
  * Renders a button which, when selected, will redirect the page to the login prompt
  */
 export const SignInButton = () => {
-    const { instance } = useMsal();
+  const { instance } = useMsal();
 
-    const handleLogin = (loginType) => {
-        if (loginType === "redirect") {
-            instance.loginRedirect(loginRequest).catch(e => {
-                console.log(e);
-            });
-        }
+  const handleLogin = (loginType) => {
+    if (loginType === "redirect") {
+      instance.loginRedirect(loginRequest).catch(e => {
+        console.log(e);
+      });
     }
-    return (
-        <>
-        <style type="text/css">
+  }
+  return (
+    <>
+      <style type="text/css">
         {`
     .btn-flat {
       background-color: #00cc00;
       color: white;
     }
 
-    .btn-flat:hover {
+    .btn-flat:hover,
+    .btn-flat:focus {
         background-color: green;
         color: white;
       }
@@ -41,7 +42,7 @@ export const SignInButton = () => {
     }
     `}
       </style>
-        <Button variant="flat" size="xxl" className="ml-auto btn-space" onClick={() => handleLogin("redirect")}><b>Prijava!</b></Button>
-        </>
-    );
+      <Button variant="flat" size="xxl" className="ml-auto btn-space" onClick={() => handleLogin("redirect")}><b>Sign in!</b></Button>
+    </>
+  );
 }

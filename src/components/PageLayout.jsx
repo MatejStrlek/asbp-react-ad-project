@@ -13,9 +13,11 @@ export const PageLayout = (props) => {
     return (
         <>
             <Navbar bg="secondary" variant="dark">
-                { isAuthenticated ? <SignOutButton /> : <SignInButton /> }
+                {isAuthenticated ? <SignOutButton /> : <SignInButton />}
             </Navbar>
             <h2><center>ASBP Project - Active Directory Authentication in React.js</center></h2>
+            <br />
+            <br />
             <br />
             <br />
             {props.children}

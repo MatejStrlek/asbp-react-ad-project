@@ -6,10 +6,10 @@ import React from "react";
 export const ProfileData = (props) => {
     return (
         <div id="profile-div">
-            <p><strong>First Name: </strong> {props.graphData.givenName}</p>
-            <p><strong>Last Name: </strong> {props.graphData.surname}</p>
-            <p><strong>Email: </strong> {props.graphData.userPrincipalName}</p>
-            <p><strong>Id: </strong> {props.graphData.id}</p>
+            <p><center><strong>First Name: </strong> {props.graphData.givenName}</center></p>
+            <p><center><strong>Last Name: </strong> {props.graphData.surname}</center></p>
+            <p><center><strong>Email: </strong> {props.graphData.userPrincipalName}</center></p>
+            <p><center><strong>ID: </strong> {props.graphData.id}</center></p>
         </div>
     );
 };

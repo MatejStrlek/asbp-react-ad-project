@@ -31,11 +31,19 @@ function ProfileContent() {
 
   return (
       <>
-          <h5 className="card-title">Welcome {name}</h5>
+      
+          <h3 className="card-title"><center>Welcome, {name}</center></h3>
+          <br />
           {graphData ? 
               <ProfileData graphData={graphData} />
               :
-              <Button variant="secondary" onClick={RequestProfileData}>Request Profile Information</Button>
+              <Button 
+              style={{
+                fontWeight: 'bold',
+                display: 'block',
+                margin: 'auto'
+              }}
+              variant="secondary" onClick={RequestProfileData}><center>Request Profile Information</center></Button>
           }
       </>
   );
@@ -48,7 +56,7 @@ function App() {
               <ProfileContent />
           </AuthenticatedTemplate>
           <UnauthenticatedTemplate>
-              <p><center>You are not signed in! Please sign in.</center></p>
+              <p><center><strong>You are not signed in! Please sign in.</strong></center></p>
           </UnauthenticatedTemplate>
       </PageLayout>
   );
