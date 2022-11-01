@@ -2,7 +2,7 @@ export const msalConfig = {
     auth: {
       clientId: "dcd95a89-802c-4a78-8b28-13ea690b83bd",
       authority: "https://login.microsoftonline.com/7102765d-0843-4e47-8376-0686741ef7a0", // This is a URL (e.g. https://login.microsoftonline.com/{your tenant ID})
-      redirectUri: "http://localhost:3000",
+      redirectUri: "https://asbp-react-ad-project.vercel.app",
     },
     cache: {
       cacheLocation: "sessionStorage", // This configures where your cache will be stored
